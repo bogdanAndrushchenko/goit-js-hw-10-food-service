@@ -1,0 +1,29 @@
+{{#each this}}
+<li class="galery-list">
+    <h2>{{name}}</h2>
+    <img src="{{flag}}" alt="Flag of {{name}}" width="320">
+    <p>Столица -{{capital}}</p>
+    <p>Денежная единица{{currency}}</p>
+    <p>Население - {{population}} человек</p>
+    <p>Официальный язык - {{language}}</p>
+    {{#if infected}}
+    <p>Все плохо! Есть вирус!!!</p>
+    {{/if}}
+    {{#unless infected}}
+    <p>Все Ok! Вируса нет!!!</p>
+    {{/unless}}
+</li>
+{{/each}}
+
+
+
+
+{{!-- {
+      "name": "Австралия",
+      "capital": "Канберра",
+      "currency": "Австралийский доллар (AUD)",
+      "language": "Английский",
+      "population": 24970200,
+      "flag": "https://wikiway.com/upload/iblock/742/800pxFlagofAustraliasvg.png",
+      "infected": false
+    } --}}

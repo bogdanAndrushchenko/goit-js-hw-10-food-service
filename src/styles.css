@@ -74,16 +74,16 @@ body.dark-theme {
   pointer-events: none;
 }
 
-.switch__input:checked + .switch__label {
+.switch__input:checked+.switch__label {
   background-color: #d3d3d4;
 }
 
-.switch__input:checked + .switch__label + .switch__marker {
+.switch__input:checked+.switch__label+.switch__marker {
   left: calc(100% - 29px);
 }
 
-.switch__input:focus + .switch__label,
-.switch__input:active + .switch__label {
+.switch__input:focus+.switch__label,
+.switch__input:active+.switch__label {
   box-shadow: 0 0 0 3px #2a6df433;
 }
 
@@ -233,4 +233,6 @@ body.dark-theme {
 
 
 
-
+.galery-list {
+  border: 2px dashed #1976d2;
+}

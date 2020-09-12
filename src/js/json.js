@@ -1,4 +1,4 @@
-import itemTemplate from"../templates/galery-items.hbs";
+import itemTemplate from '../templates/galery-items.hbs';
 const tech = ['HTML', 'CSS', 'JS', 'React'];
 
 const galleryRef = document.querySelector('.js-gallery');
@@ -7,10 +7,8 @@ const galleryRef = document.querySelector('.js-gallery');
 
 // const element = "<li><a href = ''>Hello</a></li>";
 
+const markup = itemTemplate({
+  items: ['HTML', 'CSS', 'JS', 'React'],
+});
 
-
-const markup = itemTemplate(tech);
-
-galleryRef.insertAdjacentHTML('beforeend', markup);
-
-
+// galleryRef.insertAdjacentHTML('beforeend', markup);
