@@ -1,3 +1,3 @@
 import "./styles.css";
-import "./js/json";
-import "./js/contries.js";
+import "./js/theme";
+import "./js/menu_list";
