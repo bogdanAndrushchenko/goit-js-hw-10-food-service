@@ -22,16 +22,16 @@ function changeThemeHandle(event) {
 function checkedTrue() {
   refs.body.classList.remove(theme.light)
   refs.body.classList.add(theme.dark)
-  localStorage.setItem('dark', refs.inputSwich.checked)
+  sessionStorage.setItem('dark', refs.inputSwich.checked);
 }
 
 function checkedFalse() {
   refs.body.classList.remove(theme.dark)
-  localStorage.removeItem('dark')
+  // localStorage.removeItem('dark')
 }
 
 function themeControl() {
-  const saveTheme = localStorage.getItem('dark');
+  const saveTheme = sessionStorage.getItem('dark');
   if (saveTheme) {
     checkedTrue();
     refs.inputSwich.checked = saveTheme;
